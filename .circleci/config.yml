@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Deploy Over SSH
           command: |
-            ssh $SSH_USER@$SSH_HOST "sudo /opt/bitnami/scripts/odoo/./stop.sh"
+            ssh $SSH_USER@$SSH_HOST "sudo /opt/bitnami/scripts/odoo/./restart.sh"
 
 workflows:
   build-and-deploy:
